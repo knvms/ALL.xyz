@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-cn" data-bs-theme="light">
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title _msttexthash="29273699" _msthash="0">KNVMS</title>
+    <ul id="article-list">
+
+
+
+
+
+
+
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            /* 增大每一行的高度 */
+            #article-list li {
+                line-height: 2.5; /* 增加行高 */
+                padding: 20px 0; /* 上下内边距增加到20px */
+            }
+
+            img {
+                vertical-align: middle; /* 垂直对齐图片 */
+                margin-right: 10px; /* 图片与文字之间的间距 */
+                border: 2px solid #000; /* 添加2px宽的黑色边框 */
+                border-radius: 5px; /* 可选：添加圆角边框 */
+            }
+
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: rgba(0, 0, 0, .1);
+                border: solid rgba(0, 0, 0, .15);
+                border-width: 1px 0;
+                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+
+            .bi {
+                vertical-align: -.125em;
+                fill: currentColor;
+            }
+
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+
+                .nav-scroller .nav {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding-bottom: 1rem;
+                    margin-top: -1px;
+                    overflow-x: auto;
+                    text-align: center;
+                    white-space: nowrap;
+                    -webkit-overflow-scrolling: touch;
+                }
+
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+
+            .bd-mode-toggle {
+                z-index: 1500;
+            }
+
+                .bd-mode-toggle .dropdown-menu .active .bi {
+                    display: block !important;
+                }
+        </style>
+
+
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="blog.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="切换主题 (light)" _mstaria-label="347724" _msthash="1">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#sun-fill"></use>
+                <text>切换主题</text>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text" _msttexthash="11978356" _msthash="2">切换主题</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" _msthidden="3" style="">
+            <li _msthidden="1">
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true" _msthidden="1">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg><font _mstmutation="1" _msttexthash="59995" _msthidden="1" _msthash="3">白色</font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li _msthidden="1">
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" _msthidden="1">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg><font _mstmutation="1" _msttexthash="43524" _msthidden="1" _msthash="4">黑色</font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                </button>
+            </li>
+            <li _msthidden="1">
+
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="container">
+        <header class="border-bottom lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#" _msttexthash="11280672" _msthash="7">KNVMS界面</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-3 border-bottom">
+            <nav class="nav nav-underline justify-content-between">
+                <a class="nav-item nav-link link-body-emphasis active" href="#" _msttexthash="4942002" _msthash="11">世界</a>
+
+
+
+
+
+
+
+
+
+                <a class="nav-item nav-link link-body-emphasis" href="#" _msttexthash="6718387" _msthash="21">项目</a>
+                <a class="nav-item nav-link link-body-emphasis" href="#" _msttexthash="3988881" _msthash="22">关于</a>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+    </footer>
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+    <script>
+         // 定义文章文件名的数组
+        const articles = [
+            "sbeam.html",
+            "植物大战僵尸辅助.html",
+
+
+        ];
+
+        window.onload = function() {
+            const list = document.getElementById('article-list');
+
+            articles.forEach((article) => {
+                const listItem = document.createElement('li');
+
+                // 创建图片元素
+                const img = document.createElement('img');
+                img.src = `../s/pictures/${article.replace('.html', '')}.jpg`; // 生成图片路径
+                img.alt = article; // 可选：为图片添加代替文本
+                img.style.width = '100px'; // 可选：设置图片宽度
+                img.style.height = 'auto'; // 可选：设置图片高度自适应
+
+                // 获取标题文字
+                const titleText = article.replace('.html', ''); // 去掉.html的文件名
+                const title = titleText.length > 6 ? titleText.substring(0, 6) + '..' : titleText; // 超过6个字后加..
+
+                // 创建链接元素
+                const link = document.createElement('a');
+                link.href = `../s/${article}`;
+                link.textContent = title; // 设置链接文本
+
+                // 从文本文件中获取概要
+                const titleText1 = article.replace('.html', '');
+                fetch(`../s/synopsis/${titleText1}.txt`)
+                    .then(response => response.text())
+                    .then(data => {
+                        const synopsis = data.length > 8 ? data.substring(0, 8) + '..' : data; // 超过8个字后加..
+                        const divider = document.createElement('div');
+                        divider.className = 'divider';
+                        divider.innerHTML = `<strong>${link.outerHTML}</strong><br>${synopsis}`; // 添加标题和概要
+
+                        // 将图片、概要和分隔条添加到列表项
+                        listItem.appendChild(img);
+                        listItem.appendChild(divider);
+                        list.appendChild(listItem);
+
+                        // 创建分隔条
+                        const hr = document.createElement('hr'); // 创建分隔条
+                        list.appendChild(hr);
+                    })
+                    .catch(error => {
+                        console.error('无内容:', error);
+                        const divider = document.createElement('div');
+                        divider.className = 'divider';
+                        divider.innerHTML = `<strong>${link.outerHTML}</strong><br>内容加载失败`;
+
+                        // 将图片和分隔条添加到列表项
+                        listItem.appendChild(img);
+                        listItem.appendChild(divider);
+                        list.appendChild(listItem);
+
+                        // 创建分隔条
+                        const hr = document.createElement('hr'); // 创建分隔条
+                        list.appendChild(hr);
+                    });
+            });
+        };
+    </script>
+
+
+
+
+
+</body>
+</html>
